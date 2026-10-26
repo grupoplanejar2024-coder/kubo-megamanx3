@@ -7,17 +7,17 @@
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; background-color: #121212; color: #fff; font-family: Arial, sans-serif; }
         header { text-align: center; padding: 15px; background: #1e1e1e; }
-        .badge { background: #f39c12; color: #fff; padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 14px; }
+        .badge { background: #0088ff; color: #fff; padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 14px; }
         #game-card { max-width: 500px; margin: 20px auto; background: #1e1e1e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-        .cover-container { width: 100%; height: 250px; background-image: url('megamanx3-cover.jpg'); background-size: cover; background-position: center; background-color: #333; }
+        .cover-container { width: 100%; height: 250px; background-image: url('megamanx3-cover.jpg'); background-size: cover; background-position: center; }
         .content { padding: 20px; }
-        h1 { margin: 0 0 10px 0; font-size: 24px; color: #f1c40f; }
+        h1 { margin: 0 0 10px 0; font-size: 24px; color: #00ccff; }
         .meta-info { display: flex; gap: 10px; margin-bottom: 15px; font-size: 13px; color: #aaa; }
         .description { font-size: 14px; line-height: 1.5; color: #ddd; margin-bottom: 15px; }
         .details { font-size: 13px; color: #bbb; margin-bottom: 20px; }
         .details ul { padding-left: 20px; margin: 0; }
-        .btn-play { display: block; width: 100%; padding: 12px; background: #27ae60; color: #fff; border: none; border-radius: 6px; font-weight: bold; font-size: 16px; cursor: pointer; text-align: center; }
-        .btn-play:hover { background: #219150; }
+        .btn-play { display: block; width: 100%; padding: 12px; background: #0088ff; color: #fff; border: none; border-radius: 6px; font-weight: bold; font-size: 16px; cursor: pointer; text-align: center; }
+        .btn-play:hover { background: #0066cc; }
         #game-container { display: none; width: 100%; height: 100vh; }
         #game { width: 100%; height: 100%; }
     </style>
@@ -39,7 +39,7 @@
             </div>
 
             <p class="description">
-                A terceira grande aventura de X e Zero no Super Nintendo! Enfrente novos chefes, colete peças para a armadura e jogue também com o Zero para salvar o mundo dos planos malignos do Doutor Doppler.
+                Junte-se a X e Zero na luta contra a rebelião dos Mavericks liderada pelo Dr. Doppler! Explore fases desafiadoras, conquiste novas armaduras e upgrades, e pela primeira vez na série, jogue com o Zero para salvar o mundo dos reploids.
             </p>
 
             <div class="details">
@@ -66,10 +66,12 @@
             window.EJS_player = "#game";
             window.EJS_core = "snes9x";
             window.EJS_gameName = "Mega Man X3";
-            window.EJS_color = "#f39c12";
+            window.EJS_color = "#0088ff";
             window.EJS_startOnLoaded = true;
             window.EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
-            window.EJS_gameUrl = "megamanx3.sfc"; // Caminho local direto
+            
+            // Lembre-se de ajustar a URL abaixo com o link direto da sua ROM no GitHub
+            window.EJS_gameUrl = "https://raw.githubusercontent.com/SEU-USUARIO/SEU-REPOSITORIO/main/megamanx3.sfc";
 
             let script = document.createElement("script");
             script.src = "https://cdn.emulatorjs.org/stable/data/loader.js";
